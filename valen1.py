@@ -39,12 +39,3 @@ bikes=pd.read_csv('bikes.csv', sep='\t',index_col=False)
 bikes.loc[len(bikes)+1] = [now,bikesHome,standsHome,bikesOffice,standsOffice]
 bikes.to_csv('bikes.csv', sep='\t', index=False)
 
-
-#columnsList=['bikesHome','standsHome','bikesOffice','standsOffice']
-#bikes = pd.DataFrame(columns=columnsList)
-
-#tatus = pd.read_csv('/home/miguel/Desktop/Python_files/PLAT_VIRT/meteo/status.csv', sep='\t')
-#status .drop(status .columns[0], axis=1)
-#results_day=pd.DataFrame({ fecha: results})
-#status=pd.concat([status,results_day], axis=1)
-#status.to_csv('/home/miguel/Desktop/Python_files/PLAT_VIRT/meteo/status.csv', sep='\t', index=False)
