@@ -53,6 +53,6 @@ temp=meteo[0]['temp']
 
 now = datetime.datetime.now()
 bikes=pd.read_csv('/home/miguel/Desktop/Python_files/valenbisi/valenbisi/bikes.csv', sep='\t',index_col=False)
-bikes.loc[len(bikes)+1] = [now,bikesHome,standsHome,bikesOffice,standsOffice]
+bikes.loc[len(bikes)+1] = [now,bikesHome,standsHome,bikesOffice,standsOffice,temp]
 bikes.to_csv('/home/miguel/Desktop/Python_files/valenbisi/valenbisi/bikes.csv', sep='\t', index=False)
 
