@@ -20,7 +20,7 @@ for i in range(0,len(data)):
 data['week_day']=week_day    
 
 # 0-> Monday 1->Tuesday ...
-filtered_df = data.loc[data.week_day.eq(3)].reset_index()
+filtered_df = data.loc[data.week_day.eq(1)].reset_index()
 
 
 fig, ax = plt.subplots(figsize=(7,4))
