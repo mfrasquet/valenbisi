@@ -15,6 +15,7 @@ import json
 import datetime
 
 #Load my key
+
 with open('/home/miguel/Desktop/Python_files/valenbisi/key.txt') as f:
     key = f.readlines()
 
@@ -35,7 +36,7 @@ bikesOffice=office['available_bikes']
 standsOffice=office['available_bike_stands']
 
 now = datetime.datetime.now()
-bikes=pd.read_csv('bikes.csv', sep='\t',index_col=False)
+bikes=pd.read_csv('/home/miguel/Desktop/Python_files/valenbisi/valenbisi/bikes.csv', sep='\t',index_col=False)
 bikes.loc[len(bikes)+1] = [now,bikesHome,standsHome,bikesOffice,standsOffice]
-bikes.to_csv('bikes.csv', sep='\t', index=False)
+bikes.to_csv('/home/miguel/Desktop/Python_files/valenbisi/valenbisi/bikes.csv', sep='\t', index=False)
 
